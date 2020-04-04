@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<?php
+    include "Account.php";
+    include "car.php"
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Online php</title>
+</head>
+<body>
+    <h1> Progrmaciòn orientada a Objetos en PHP</h1>
+    <?php
+
+        $car = new Car("ADM054", new Account("Andres Torres", "CC1254875689"));
+        echo("<p>");
+            $car->printDataCar();
+        echo("<p>");
+    ?>
+</body>
+
+</html>
